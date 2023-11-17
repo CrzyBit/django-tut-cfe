@@ -1,0 +1,19 @@
+{% extends 'projectroot/root-base.html' %}
+
+{% block title %}
+  <title>welcome to my website</title>
+{% endblock %}
+
+{% block header %}
+<h1>atik.xclusive</h1>
+{% endblock %}
+
+{% block main %}
+<ul class="app_list">
+{% for app in apps.values %}
+<li>
+  <a href="{{app.app_link}}">{{app.app_name}}</a>
+</li>
+{% endfor %}
+</ul>
+{% endblock %}

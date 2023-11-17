@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Sans-Serif;
+}
+
+.content-box{
+  padding: 5px;
+}
+
+body{
+  background:#fff ;
+}
+
+header{
+  background: linear-gradient(#6200df,#8729ff 30% 70%,#6200df);
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.header-title{
+  font-family: Monospace;
+  text-align: center;
+  padding: 5px;
+}
+.header-btn{
+  background: linear-gradient(90deg, #000,#333 40% 60%, #000);
+  font-weight: bold;
+  margin: 5px;
+  padding:5px 10px;
+  border-radius: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+.article-list-item{
+  margin: 2px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px;
+}
+.article-list-item a{
+  color: #ff52ad;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin:5px 0;
+  font-weight: bolder;
+}
+
+
+/******* ARTICLE DETAIL VIEW ********/
+.article-title{
+  padding: 10px;
+  font-size: 35px;
+}
+.article-content{
+  padding: 10px;
+}

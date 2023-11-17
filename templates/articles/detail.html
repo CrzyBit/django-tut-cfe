@@ -1,0 +1,17 @@
+{% extends 'articles/base.html' %}
+
+{% block title %}
+<title>article (id:{{article_object.id}})</title>
+{% endblock %}
+
+{% block header %}
+<a href="/articles/" class="header-btn">back</a>
+<h1 class="header-title">Article (id:{{article_object.id}})</h1>
+{% endblock%}
+
+{% block main %}
+<article>
+<h1 class="article-title">{{article_object.title}}</h1>
+<p class="article-content">{{article_object.content}}</p>
+</article>
+{% endblock %}

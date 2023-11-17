@@ -1,0 +1,22 @@
+{% extends 'articles/base.html' %}
+
+{% block title %}
+<title>articles</title>
+{% endblock %}
+  
+{% block header %}
+<h1 class="header-title">Articles</h1>
+{% endblock %}
+  
+{% block main %}
+
+<ul class="article-list'">
+    {% for article in articles %}
+    <li class='article-list-item'>
+      <a href="/articles/{{article.id}}">
+      {{article.title}}</a>
+      <p><small>{{article.content|truncatechars:100}}</small></p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
